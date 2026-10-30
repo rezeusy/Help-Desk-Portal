@@ -1,0 +1,63 @@
+# Project TODO
+
+- [x] Configure the Northstar Inventory workspace title and modern dark-sidebar visual system.
+- [x] Add authenticated workspace routing with login and forced password-change handling.
+- [x] Add master inventory data model with asset IDs, names, categories, quantities, deployment quantities, and notes.
+- [x] Add master inventory queries and mutations for create, edit, delete, bulk delete, search, category filtering, and CSV export.
+- [x] Add office location data model and CRUD workflows.
+- [x] Add office assignment, receipt, inline quantity adjustment, and unassign workflows.
+- [x] Add live dashboard metrics for total assets, total units, deployed units, available units, deployment coverage, categories, and offices.
+- [x] Add audit history data model and protected query for inventory, office, receipt, deployment, and user-access changes.
+- [x] Add admin-only user management with role controls, active status, password changes, temporary reset flow, and delete safeguards.
+- [x] Build responsive operations-dashboard layout with persistent sidebar, mobile navigation, branded Northstar workspace identity, and accessible focus states.
+- [x] Apply the modern visual design across dashboard, master inventory, office detail, audit history, admin users, login, and password reset screens.
+- [x] Add or preserve Vitest coverage for authentication, inventory, office, audit, export, and admin workflows.
+- [x] Run TypeScript validation, tests, production build, and responsive visual verification.
+- [x] Save a final checkpoint before publishing and deliver the live workspace URL.
+- [x] Fix the reported OAuth callback failure (`{"error":"OAuth callback failed"}`) in the published workspace.
+- [x] Verify the corrected OAuth callback and authenticated workspace entry flow in the live preview.
+- [x] Add advanced Master Inventory search across asset ID, name, category, and notes with responsive filter controls and clear active-filter state.
+- [x] Add and run focused tests for advanced Master Inventory search and filtering without regressing inventory actions or export.
+- [x] Rename the visible workspace branding and browser metadata to IT GLOBAL (LYNX - STARS) Inventory.
+- [x] Add Globalstar and Globalynx ownership to inventory assets with a required company choice on create and an editable company choice on update.
+- [x] Show company ownership clearly in Master Inventory and office inventory rows, including a distinguishable badge for mixed-company office stock.
+- [x] Add company filtering to Master Inventory and preserve company ownership through office assignment, receipt, adjustment, and export flows.
+- [x] Add focused tests and verify the company migration, CRUD flows, filters, mixed-office visibility, responsive UI, and build output.
+- [x] Verify company ownership on the office inventory screen with mixed Globalstar/Globalynx rows and exercise the office company filter.
+- [x] Capture mobile responsive verification for company controls on Master Inventory and office inventory screens.
+- [x] Add focused regression coverage for company ownership in inventory create, update, and office-first create flows.
+- [x] Create the requested office location named Stanley for live mixed-company verification.
+- [x] Verify the Stanley office route can display and filter Globalstar and Globalynx inventory rows.
+- [x] Add KBD-GS Keyboard owned by Globalstar with quantity 3 to Stanley.
+- [x] Add KBD-GX Keyboard owned by Globalynx with quantity 44 to Stanley.
+- [x] Verify the Stanley office shows both company badges and filters each keyboard correctly.
+- [x] Add a focused regression test for editing an existing inventory item’s company ownership while preserving deployed and assigned quantities.
+- [x] Capture and document verifiable mobile Stanley office-screen evidence for company controls, badges, and filtering.
+- [x] Strengthen the company-edit regression test to explicitly verify office assignment records and quantities remain unchanged alongside deployed totals.
+- [x] Perform inspectable mobile verification of Stanley’s company filter, ownership badges, and filtered rows, then document the concrete result.
+- [x] Reconcile office-assigned quantities when an office is deleted so Master Inventory deployed and available totals update correctly.
+- [x] Record office deletion reconciliation in audit history and preserve safe deletion behavior.
+- [x] Add regression coverage proving deleting an office removes its assignments from deployed totals while preserving master total quantities.
+- [x] Verify the deletion flow in the live workspace, run tests, and build before checkpointing.
+- [x] Create and remove a temporary office/test asset pair to verify live office deletion without touching Stanley’s real records.
+- [x] Surface released-unit details for office deletions in Audit History so the reconciliation amount is visible to users.
+- [x] Fix office quantity edits so Master Inventory deployed and available totals update immediately and after reload.
+- [x] Add non-working device quantities and audit metadata without corrupting working/deployed totals.
+- [x] Add a dedicated Non-working Devices view with office, company, and asset visibility plus clear empty/loading states.
+- [x] Add non-working device create, edit, and recovery workflows from office and master inventory surfaces.
+- [x] Add focused regression tests for office-edit reconciliation and non-working device flows.
+- [x] Verify the repaired workflows responsively in the authenticated live workspace and save a checkpoint.
+- [x] Add a Master Inventory entry point to the non-working device workflow so users can manage condition records from the master surface.
+- [x] Exercise office-edit synchronization and non-working create/edit/recovery on authenticated desktop and mobile views, then save a new feature checkpoint.
+- [x] Rebalance Master Inventory spacing, control widths, and action alignment to match the supplied UI reference on desktop and mobile.
+- [x] Redesign the Master Inventory desktop control row and sidebar spacing based on the latest user screenshots so search, filters, actions, and navigation read as a balanced composition.
+- [x] Fix authenticated sidebar overlap by giving Workspace links and Office rows stable vertical flow and narrow-screen scrolling.
+- [x] Add a direct Non-working Devices creation form that can choose an office and existing/new asset, capture company ownership, and assign non-working quantity without requiring a separate office-page flow.
+- [x] Add a source choice to the Non-working Devices add flow for Master Inventory only versus Master Inventory plus office assignment, with correct deployed and non-working totals.
+- [x] Track master-only non-working quantities on inventory items and show them in Non-working Devices as Office: Unassigned without increasing deployed quantities.
+- [x] Add safe recovery for unassigned non-working inventory and preserve audit visibility.
+- [x] Add regression coverage for master-only non-working creation, reporting, and recovery.
+- [x] Show master-only non-working creation and recovery clearly in Audit History, including Office: Unassigned and condition quantity changes.
+- [x] Add focused Audit History tests for master-only stock receipts and unassigned non-working recovery events.
+- [x] Make existing Master Inventory deployment to an office consume available stock without increasing the master total; preserve new-item receipts as the flow that increases both totals.
+- [x] Exclude unassigned non-working stock from deployable availability and add regression coverage for deployment versus receipt quantity semantics.

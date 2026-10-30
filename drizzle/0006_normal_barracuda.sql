@@ -1,0 +1,1 @@
+ALTER TABLE `location_items` ADD `nonWorkingQty` int DEFAULT 0 NOT NULL;
